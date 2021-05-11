@@ -38,13 +38,13 @@ entities:
               - !include
                 - item_cycle_weather_check_box.yaml
                 - entity: input_boolean.irrigation_cycle{{ cycle }}_adjust_for_temperature
-                  name: Adjust For Temperature
+                  name: Correzione per Temperatura
 
               #=== Rainfall Adjustment Select Button
               - !include
                 - item_cycle_weather_check_box.yaml
                 - entity: input_boolean.irrigation_cycle{{ cycle }}_adjust_for_rainfall
-                  name: Adjust For Rainfall
+                  name: Correzione per Pioggia
 
       #=========================
       #=== CYCLE ZONE DURATIONS

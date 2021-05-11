@@ -17,7 +17,7 @@ entities:
     cards:
       #=== SETTINGS TITLE BUTTON
       - type: custom:button-card
-        name: -- SETTINGS --
+        name: -- IMPOSTAZIONI --
         styles:
           card:
             - font-size: 16px
@@ -35,19 +35,19 @@ entities:
       - !include
         - ../garden_section_select_button.yaml
         - entity: input_boolean.irrigation_ui_show_general_settings
-          name: GENERAL
+          name: GENERALE
 
       #=== RAINFALL
       - !include
         - ../garden_section_select_button.yaml
         - entity: input_boolean.irrigation_ui_show_rainfall_settings
-          name: RAINFALL
+          name: PIOGGIA
 
       #=== TEMPERATURE
       - !include
         - ../garden_section_select_button.yaml
         - entity: input_boolean.irrigation_ui_show_temperature_settings
-          name: TEMPERATURE
+          name: TEMPERATURA
 
       #=== HELP BUTTON
       - !include item_settings_help_button.yaml

@@ -19,33 +19,33 @@ tap_action:
   action: fire-dom-event
   browser_mod:
     command: popup
-    title: "\U00002139 INFORMATION"
+    title: "\U00002139 INFORMAZIONI"
     card:
       type: markdown
       content: >
-        Tap a Cycle Start Time to edit the schedule time
+        Premi su Orario Inizio Ciclo per modificare il tempo della programmazione
 
-        Tap a Cycle header to edit the name
-
-
-        Tap a Zone to edit its information
+        Premi l'intestazione di un Ciclo per modificare il nome
 
 
-        Selecting 'Testing Mode' will change run times to seconds.
+        Premi su una Zona per modificare le sue informazioni
 
-        e.g a run time of 5 minutes will run for 5 seconds.
+
+        Selezionando 'Modalità Test' scambierai i minuti coi secondi.
+
+        ad esempio un ciclo di 5 minuti sarà attivo per 5 secondi.
 
 
         ---
 
 
-        #### Adjusting Duration For Weather (Experimental)
+        #### Correzione della durata tramite Meteo (Sperimentale)
 
-        Turning on weather adjustments will adjust watering time based on temperature
-        and/or rainfall.
+        Attivando la correzione tramite dati Meteo modificherà il tempo d'irrigazione a causa della temperatura
+        e/o pioggia.
 
 
-        See RAINFALL & TEMPERATURE settings.
+        Guarda sezione Pioggia e Temperatura.
       style: >
         ha-card {
           font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};

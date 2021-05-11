@@ -12,7 +12,7 @@ entities:
       #=== General Rainfall Settings
       - type: custom:button-card  
         show_icon: false
-        name: GENERAL RAINFALL SETTINGS
+        name: IMPOSTAZIONI GENERALI PIOGGIA
         tap_action:
           action: none
         styles: &title_style
@@ -39,7 +39,7 @@ entities:
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_days_of_rainfall_history_used
             name: Number of days history to use
-            label: (0 to 4) If zero only rainfall today is used
+            label: (0 a 4) Se zero verrà usata solo la misurazione di pioggia odierna
             round: 0
 
       #=== Rainfall threshold
@@ -47,13 +47,13 @@ entities:
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_rainfall_threshold
             name: Rainfall threshold
-            label: If this threshold is reached no watering takes place
+            label: Se viene raggiunta la soglia non verrà effettuata l'irrigazione
 
       #=== Ignore schedules if raining
       - !include
           - ../item_settings_line.yaml
           - entity: input_boolean.irrigation_ignore_schedule_if_raining
-            name: Ignore schedules if it is raining
+            name: Ignora la programmazione se sta piovendo
             padding: 0em 0em 0.3em 0em
 
       #-------------------------
@@ -69,7 +69,7 @@ entities:
 
           - type: custom:button-card  
             show_icon: false
-            name: RAINFALL INCLUDED IN CALCULATIONS
+            name: PIOGGIA INCLUSA NEI CALCOLI
             tap_action:
               action: none
             styles: *title_style
@@ -150,7 +150,7 @@ entities:
       #=== Rainfall Data
       - type: custom:button-card  
         show_icon: false
-        name: RAINFALL DATA
+        name: DATI PIOGGIA
         tap_action:
           action: none
         styles: *title_style
@@ -159,8 +159,8 @@ entities:
       - !include
           - ../item_settings_multiplier_line.yaml
           - entity: input_number.irrigation_rainfall_multiplier
-            name: "Current Multiplier ( \U00002139 )"
-            label: Calculated based on rainfall and threshold
+            name: "Moltiplicatore corrente ( \U00002139 )"
+            label: Calcolato su pioggia e soglia
             padding: 0.3em 0em 0em 0em
 
       #=== Rainfall today
@@ -176,7 +176,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: sensor.irrigation_sensor_rainfall_yesterday
-            name: Rainfall Yesterday
+            name: Pioggia ieri
             icon: mdi:weather-rainy
             round: 1
             tap_action: none
@@ -186,7 +186,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_rainfall_2
-            name: Two days ago
+            name: Due giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_rainfall_history_used'].state < 2 ? 'none' : 'unset' ]]]"
@@ -195,7 +195,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_rainfall_3
-            name: Three days ago
+            name: Tre giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_rainfall_history_used'].state < 3 ? 'none' : 'unset' ]]]"
@@ -204,7 +204,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_rainfall_4
-            name: Four days ago
+            name: Quattro giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_rainfall_history_used'].state < 4 ? 'none' : 'unset' ]]]"
@@ -223,7 +223,7 @@ entities:
       #=== Forecast Rain vs. Actual Rain
       - type: custom:button-card  
         show_icon: false
-        name:  RAINFALL - <font color=IndianRed>Forecast</font> vs. <font color=SteelBlue>Actual</font>
+        name:  PIOGGIA - <font color=IndianRed>Previsione</font> vs. <font color=SteelBlue>Attuale</font>
         tap_action:
           action: none
         styles: *title_style

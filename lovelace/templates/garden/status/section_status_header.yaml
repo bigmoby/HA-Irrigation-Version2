@@ -36,7 +36,7 @@ entities:
         name: >
           [[[
             if (states['input_boolean.irrigation_master_control_switch'].state == 'off')
-              return 'SYSTEM IS OFF';
+              return 'SISTEMA SPENTO';
             else
               var today = new Date();
               var weekday = new Array(7);
@@ -89,20 +89,20 @@ entities:
               var cycle3_running = states['input_boolean.irrigation_cycle3_running'].state;
 
               if (cycle1_running == 'on')
-                return cycle1_name + ' cycle';
+                return cycle1_name;
               else if (cycle2_running == 'on')
-                return cycle2_name + ' cycle';
+                return cycle2_name;
               else if (cycle3_running == 'on')
-                return cycle3_name + ' cycle';
+                return cycle3_name;
               else if (cycle1_schedule_enabled == 'on' && cycle1_runs_today && cycle1_start_time > time_now)
-                  return cycle1_name + ' cycle at ' + cycle1_start_time;
+                  return cycle1_name + ' alle ' + cycle1_start_time;
               else if (cycle2_schedule_enabled == 'on' && cycle2_runs_today && cycle2_start_time > time_now)
-                  return cycle2_name + ' cycle at ' + cycle2_start_time;
+                  return cycle2_name + ' alle ' + cycle2_start_time;
               else if (cycle1_schedule_enabled == 'on' && cycle1_runs_tomorrow)
-                  return 'Tomorrow at ' + cycle1_start_time;
+                  return 'Domani alle ' + cycle1_start_time;
               else if (cycle2_schedule_enabled == 'on' && cycle2_runs_tomorrow)
-                  return 'Tomorrow at ' + cycle2_start_time;
-              else return 'NOTHING SCHEDULED';
+                  return 'Domani alle ' + cycle2_start_time;
+              else return 'NESSUN PROGRAMMA';
           ]]]
         label: >
           [[[
@@ -111,13 +111,13 @@ entities:
             var cycle3_running = states['input_boolean.irrigation_cycle3_running'].state;
 
             if (cycle1_running == 'on')
-              return 'RUNNING: ';
+              return 'IN ESECUZIONE: ';
             else if (cycle2_running == 'on')
-              return 'RUNNING: ';
+              return 'IN ESECUZIONE: ';
             else if (cycle3_running == 'on')
-              return 'RUNNING: ';
+              return 'IN ESECUZIONE: ';
             else
-              return 'NEXT RUN: ';
+              return 'PROSSIMA ESECUZIONE: ';
           ]]]
         show_label: true
         show_icon: false
@@ -189,11 +189,11 @@ entities:
             ]]]
           browser_mod:
             command: popup
-            title: "\U00002757  CYCLE SCHEDULE CLASH"
+            title: "\U00002757  PROGRAMMAZIONE DEI CICLI FALLITA"
             card:
               type: markdown
               content: |
-                #### WARNING! You have overlapping cycle schedules...
+                #### ATTENZIONE! Hai sovrapposto i cicli di programmazione...
 
                 {{ state_attr('binary_sensor.irrigation_cycle_start_clash', 'clash_text') }}
 

@@ -302,8 +302,8 @@ automation:
           - input_number.irrigation_cycle2_zone15_duration
           - input_number.irrigation_cycle2_zone15_duration_box
           - input_number.irrigation_cycle2_zone16_duration
-          - input_number.irrigation_cycle2_zone16_duration_box          
-          
+          - input_number.irrigation_cycle2_zone16_duration_box
+
           - input_number.irrigation_cycle3_zone1_duration
           - input_number.irrigation_cycle3_zone1_duration_box
           - input_number.irrigation_cycle3_zone2_duration
@@ -335,7 +335,7 @@ automation:
           - input_number.irrigation_cycle3_zone15_duration
           - input_number.irrigation_cycle3_zone15_duration_box
           - input_number.irrigation_cycle3_zone16_duration
-          - input_number.irrigation_cycle3_zone16_duration_box          
+          - input_number.irrigation_cycle3_zone16_duration_box
 
     action:
       #=== Keep input_number slider and box synchronised

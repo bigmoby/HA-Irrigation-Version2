@@ -17,8 +17,8 @@ entities:
           - !include
             - ../item_settings_check_box_with_entity_icon.yaml
             - entity: input_boolean.irrigation_master_control_switch
-              on_name: "System is ON"
-              off_name: "System is OFF"
+              on_name: "Sistema è ON"
+              off_name: "Sistema è OFF"
 
           #=== Irrigation Testing Mode
           - !include
@@ -29,7 +29,7 @@ entities:
       - !include
           - item_settings_warning.yaml
           - entity: input_boolean.irrigation_testing_mode
-            name: 'Warning! Testing mode converts run<br>times from minutes to seconds'
+            name: 'Attenzione! La modalità test converte i minuti <br>in secondi'
 
       #=== Notify users
       - !include item_settings_notify_users.yaml
@@ -54,27 +54,27 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_number_of_zones
-            name: Number Of Zones
+            name: Numero di Zone
 
       #=== Pause between zones
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_pause_between_zones_in_seconds
-            name: Pause Between Zones
+            name: Pausa tra le Zone
 
       #=== Minimum duration when using weather adjustments
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_weather_adjusted_minimum_duration_in_seconds
-            name: Minimum Time To Run A Zone
-            label: When using weather adjustments
+            name: Tempo minimo irrigazione Zona
+            label: Quando si usano le correzioni Meteo
 
       #=== Maximum duration when using weather adjustments
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_weather_adjusted_maximum_duration_in_minutes
-            name: Maximum Time To Run A Zone
-            label: When using weather adjustments
+            name: Tempo massimo irrigazione Zone
+            label: Quando si usano le correzioni Meteo
 
 
       #-------------------------

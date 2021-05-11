@@ -4,7 +4,7 @@
 #==================
 input_select:
   irrigation_cycle1_start_time_type:
-    options: 
+    options:
       - Actual Time
       - Sunrise Offset
       - Sunset Offset
@@ -18,7 +18,7 @@ input_number:
   #=====================================
   #=== Start time Sunrise/Sunset offset
   #=====================================
-  irrigation_cycle1_start_time_sunrise_offset: 
+  irrigation_cycle1_start_time_sunrise_offset:
     name: Sunrise Offset
     min: -120
     max: 120
@@ -26,7 +26,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:weather-sunset-up
 
-  irrigation_cycle1_start_time_sunset_offset: 
+  irrigation_cycle1_start_time_sunset_offset:
     name: Sunset Offset
     min: -120
     max: 120
@@ -38,112 +38,112 @@ input_number:
   #=====================================
   #=== Cycle 1 zone durations (Sliders)
   #=====================================
-  irrigation_cycle1_zone1_duration: 
+  irrigation_cycle1_zone1_duration:
     name: Cycle 1 Zone1 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-1-box-outline
 
-  irrigation_cycle1_zone2_duration: 
+  irrigation_cycle1_zone2_duration:
     name: Cycle 1 Zone2 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-2-box-outline
 
-  irrigation_cycle1_zone3_duration: 
+  irrigation_cycle1_zone3_duration:
     name: Cycle 1 Zone3 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-3-box-outline
 
-  irrigation_cycle1_zone4_duration: 
+  irrigation_cycle1_zone4_duration:
     name: Cycle 1 Zone4 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-4-box-outline
 
-  irrigation_cycle1_zone5_duration: 
+  irrigation_cycle1_zone5_duration:
     name: Cycle 1 Zone5 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-5-box-outline
 
-  irrigation_cycle1_zone6_duration: 
+  irrigation_cycle1_zone6_duration:
     name: Cycle 1 Zone6 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-6-box-outline
 
-  irrigation_cycle1_zone7_duration: 
+  irrigation_cycle1_zone7_duration:
     name: Cycle 1 Zone7 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-7-box-outline
 
-  irrigation_cycle1_zone8_duration: 
+  irrigation_cycle1_zone8_duration:
     name: Cycle 1 Zone8 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-8-box-outline
 
-  irrigation_cycle1_zone9_duration: 
+  irrigation_cycle1_zone9_duration:
     name: Cycle 1 Zone9 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-9-box-outline
 
-  irrigation_cycle1_zone10_duration: 
+  irrigation_cycle1_zone10_duration:
     name: Cycle 1 Zone10 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-10-box-outline
 
-  irrigation_cycle1_zone11_duration: 
+  irrigation_cycle1_zone11_duration:
     name: Cycle 1 Zone11 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-1-box-outline
 
-  irrigation_cycle1_zone12_duration: 
+  irrigation_cycle1_zone12_duration:
     name: Cycle 1 Zone12 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-2-box-outline
 
-  irrigation_cycle1_zone13_duration: 
+  irrigation_cycle1_zone13_duration:
     name: Cycle 1 Zone13 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-3-box-outline
 
-  irrigation_cycle1_zone14_duration: 
+  irrigation_cycle1_zone14_duration:
     name: Cycle 1 Zone14 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-4-box-outline
 
-  irrigation_cycle1_zone15_duration: 
+  irrigation_cycle1_zone15_duration:
     name: Cycle 1 Zone15 Duration
     min: 0
     max: 60
     unit_of_measurement: min
     icon: mdi:numeric-5-box-outline
 
-  irrigation_cycle1_zone16_duration: 
+  irrigation_cycle1_zone16_duration:
     name: Cycle 1 Zone16 Duration
     min: 0
     max: 60
@@ -153,7 +153,7 @@ input_number:
   #=========================================
   #=== Cycle 1 zone durations (Input Boxes)
   #=========================================
-  irrigation_cycle1_zone1_duration_box: 
+  irrigation_cycle1_zone1_duration_box:
     name: Cycle 1 Zone 1 Duration
     min: 0
     max: 60
@@ -161,7 +161,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-1-box-outline
 
-  irrigation_cycle1_zone2_duration_box: 
+  irrigation_cycle1_zone2_duration_box:
     name: Cycle 1 Zone 2 Duration
     min: 0
     max: 60
@@ -169,7 +169,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-2-box-outline
 
-  irrigation_cycle1_zone3_duration_box: 
+  irrigation_cycle1_zone3_duration_box:
     name: Cycle 1 Zone 3 Duration
     min: 0
     max: 60
@@ -177,7 +177,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-3-box-outline
 
-  irrigation_cycle1_zone4_duration_box: 
+  irrigation_cycle1_zone4_duration_box:
     name: Cycle 1 Zone 4 Duration
     min: 0
     max: 60
@@ -185,7 +185,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-4-box-outline
 
-  irrigation_cycle1_zone5_duration_box: 
+  irrigation_cycle1_zone5_duration_box:
     name: Cycle 1 Zone 5 Duration
     min: 0
     max: 60
@@ -193,7 +193,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-5-box-outline
 
-  irrigation_cycle1_zone6_duration_box: 
+  irrigation_cycle1_zone6_duration_box:
     name: Cycle 1 Zone 6 Duration
     min: 0
     max: 60
@@ -201,7 +201,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-6-box-outline
 
-  irrigation_cycle1_zone7_duration_box: 
+  irrigation_cycle1_zone7_duration_box:
     name: Cycle 1 Zone 7 Duration
     min: 0
     max: 60
@@ -209,7 +209,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-7-box-outline
 
-  irrigation_cycle1_zone8_duration_box: 
+  irrigation_cycle1_zone8_duration_box:
     name: Cycle 1 Zone 8 Duration
     min: 0
     max: 60
@@ -217,7 +217,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-8-box-outline
 
-  irrigation_cycle1_zone9_duration_box: 
+  irrigation_cycle1_zone9_duration_box:
     name: Cycle 1 Zone 9 Duration
     min: 0
     max: 60
@@ -225,7 +225,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-9-box-outline
 
-  irrigation_cycle1_zone10_duration_box: 
+  irrigation_cycle1_zone10_duration_box:
     name: Cycle 1 Zone 10 Duration
     min: 0
     max: 60
@@ -233,7 +233,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-10-box-outline
 
-  irrigation_cycle1_zone11_duration_box: 
+  irrigation_cycle1_zone11_duration_box:
     name: Cycle 1 Zone 11 Duration
     min: 0
     max: 60
@@ -241,7 +241,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-1-box-outline
 
-  irrigation_cycle1_zone12_duration_box: 
+  irrigation_cycle1_zone12_duration_box:
     name: Cycle 1 Zone 12 Duration
     min: 0
     max: 60
@@ -249,7 +249,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-2-box-outline
 
-  irrigation_cycle1_zone13_duration_box: 
+  irrigation_cycle1_zone13_duration_box:
     name: Cycle 1 Zone 13 Duration
     min: 0
     max: 60
@@ -257,7 +257,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-3-box-outline
 
-  irrigation_cycle1_zone14_duration_box: 
+  irrigation_cycle1_zone14_duration_box:
     name: Cycle 1 Zone 14 Duration
     min: 0
     max: 60
@@ -265,7 +265,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-4-box-outline
 
-  irrigation_cycle1_zone15_duration_box: 
+  irrigation_cycle1_zone15_duration_box:
     name: Cycle 1 Zone 15 Duration
     min: 0
     max: 60
@@ -273,7 +273,7 @@ input_number:
     unit_of_measurement: min
     icon: mdi:numeric-5-box-outline
 
-  irrigation_cycle1_zone16_duration_box: 
+  irrigation_cycle1_zone16_duration_box:
     name: Cycle 1 Zone 16 Duration
     min: 0
     max: 60
@@ -329,7 +329,7 @@ input_boolean:
     name: Cycle 1 Running
     icon: mdi:play-circle-outline
     initial: 'off'
-    
+
   #===============================================
   #=== Cycle 1 durations are adjusted for weather
   #===============================================
@@ -353,7 +353,7 @@ sensor:
         friendly_name: Cycle 1 Start Time In Seconds
         value_template: >
           {{ state_attr('input_datetime.irrigation_cycle1_start_time', 'timestamp') }}
-        
+
       #=== Cycle 1 Duration In Seconds
       irrigation_cycle1_duration_in_seconds:
         friendly_name: Cycle 1 Duration In Seconds
@@ -361,7 +361,7 @@ sensor:
           {% set durations = expand('group.irrigation_group_cycle1_zone_durations') | map(attribute='state') | map('int') | list %}
           {% set max = states('input_number.irrigation_number_of_zones') | int %}
           {{ durations[0:max] | sum }}
-          
+
       #=== Actual Zone durations in seconds
       irrigation_cycle1_zone1_actual_duration_in_seconds:
         friendly_name: Cycle 1 Zone 1 Actual Duration In Seconds
@@ -704,7 +704,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone10_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 10 Actual Duration In Seconds
         value_template: >
@@ -742,7 +742,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone11_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 11 Actual Duration In Seconds
         value_template: >
@@ -780,7 +780,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone12_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 12 Actual Duration In Seconds
         value_template: >
@@ -818,7 +818,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone13_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 13 Actual Duration In Seconds
         value_template: >
@@ -856,7 +856,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone14_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 14 Actual Duration In Seconds
         value_template: >
@@ -894,7 +894,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone15_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 15 Actual Duration In Seconds
         value_template: >
@@ -932,7 +932,7 @@ sensor:
           {% else %}
             0
           {% endif %}
-          
+
       irrigation_cycle1_zone16_actual_duration_in_seconds:
         friendly_name: Cycle 2 Zone 16 Actual Duration In Seconds
         value_template: >

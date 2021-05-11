@@ -12,7 +12,7 @@ entities:
       #=== Temperature Settings
       - type: custom:button-card  
         show_icon: false
-        name: TEMPERATURE SETTINGS
+        name: IMPOSTAZIONI TEMPERATURA
         tap_action:
           action: none
         styles: &title_style
@@ -38,15 +38,15 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_days_of_temp_history_used
-            name: Number of days history to use
-            label: (0 to 4) If zero only the temperature today is used
+            name: Numero dei giorni di storico da usare
+            label: (0 a 4) Se zero allora sarà usata solo la temperatura odierna
 
       #=== Temperature Baseline
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_temperature_baseline
-            name: Baseline temperature
-            label: Exceeding this temperature increases the watering time
+            name: Temperatura di base
+            label: Aumentando questa temperatura aumenterà il tempo d'irrigazione
             padding: 0em 0em 0.3em 0em
 
       #-------------------------
@@ -57,7 +57,7 @@ entities:
       #=== Temperature Data
       - type: custom:button-card  
         show_icon: false
-        name: TEMPERATURE DATA
+        name: DATI TEMPERATURA
         tap_action:
           action: none
         styles: *title_style
@@ -66,14 +66,14 @@ entities:
       - !include
           - ../item_settings_multiplier_line.yaml
           - entity: input_number.irrigation_temp_multiplier
-            name: "Current Multiplier ( \U00002139 )"
-            label: Calculated based on temperature and baseline
+            name: "Moltiplicatore corrente ( \U00002139 )"
+            label: Calcolato sulla temperatura corrente e temperatura di base
 
       #=== Highest Forecast High Temperature Today
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_temperature_highest_forecast_high_temp_today
-            name: Highest forecasted temperature today
+            name: Temperatura massima prevista per oggi
             round: 1
             tap_action: none
 
@@ -81,7 +81,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_temperature_highest_actual_temp_today
-            name: Highest actual temperature recorded today
+            name: Temperatura effettiva più alta registrata oggi
             round: 1
             tap_action: none
             padding: 0em 0em 0.3em 0em
@@ -96,7 +96,7 @@ entities:
       #=== Forecast High vs. Actual Temperature
       - type: custom:button-card  
         show_icon: false
-        name:  HIGH TEMPERATURE - <font color=IndianRed>Forecast</font> vs. <font color=SteelBlue>Actual</font>
+        name:  TEMPERATURA MASSIMA - <font color=IndianRed>Previsione</font> vs. <font color=SteelBlue>Attuale</font>
         tap_action:
           action: none
         styles: *title_style
@@ -117,14 +117,14 @@ entities:
       #=== Temperature History
       - type: custom:button-card  
         show_icon: false
-        name: HIGH TEMPERATURE HISTORY
+        name: STORICO TEMPERATURE MASSIME
         tap_action:
           action: none
         styles: *title_style
 
       - type: custom:button-card
         show_icon: false
-        name: Zero days data selected (only using today)
+        name: Zero giorni impostati (verrà usato solo il dato odierno)
         tap_action:
           action: none
         styles:
@@ -151,7 +151,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_high_temp_1
-            name: Yesterday
+            name: Ieri
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_temp_history_used'].state < 1 ? 'none' : 'unset' ]]]"
@@ -160,7 +160,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_high_temp_2
-            name: Two days ago
+            name: Due giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_temp_history_used'].state < 2 ? 'none' : 'unset' ]]]"
@@ -169,7 +169,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_high_temp_3
-            name: Three days ago
+            name: Tre giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_temp_history_used'].state < 3 ? 'none' : 'unset' ]]]"
@@ -178,7 +178,7 @@ entities:
       - !include
           - ../item_settings_line.yaml
           - entity: input_number.irrigation_high_temp_4
-            name: Four days ago
+            name: Quattro giorni fa
             round: 1
             tap_action: none
             display_condition: "[[[ return states['input_number.irrigation_days_of_temp_history_used'].state < 4 ? 'none' : 'unset' ]]]"

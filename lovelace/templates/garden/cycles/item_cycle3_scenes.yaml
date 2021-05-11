@@ -25,7 +25,7 @@ tap_action:
   action: call-service
   service: browser_mod.popup
   service_data:
-    title: Scenes
+    title: Scene
     hide_header: true
     card:
       type: entities

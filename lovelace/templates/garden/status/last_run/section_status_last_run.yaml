@@ -10,7 +10,7 @@ entities:
   - !include
     - ../item_status_include_section_check_box.yaml
     - entity: input_boolean.irrigation_ui_show_last_run_details
-      name: DETAILS OF LAST RUN
+      name: DETTAGLI ULTIMA ESECUZIONE
 
   #=== LAST RUN CYCLE DATE AND TIME AND NAME
   - type: custom:button-card
@@ -56,7 +56,7 @@ entities:
         date.setSeconds(total_seconds);
         return date.toISOString().substr(11, 8);
       ]]]
-    label: "Total watering time last run -&nbsp"
+    label: "Tempo totale ultima irrigazione -&nbsp"
     show_label: true
     show_icon: false
     tap_action:

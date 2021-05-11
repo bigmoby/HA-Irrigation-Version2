@@ -40,7 +40,7 @@ timer:
 #=== Input Numbers
 #==================
 input_number:
-  irrigation_number_of_zones: 
+  irrigation_number_of_zones:
     name: Number of Zones
     min: 1
     max: 16
@@ -57,97 +57,97 @@ input_text:
   #=======================
   #=== Previous Durations
   #=======================
-  irrigation_zone1_previous_duration_in_seconds: 
+  irrigation_zone1_previous_duration_in_seconds:
     name: Zone 1 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone2_previous_duration_in_seconds: 
+  irrigation_zone2_previous_duration_in_seconds:
     name: Zone 2 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone3_previous_duration_in_seconds: 
+  irrigation_zone3_previous_duration_in_seconds:
     name: Zone 3 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone4_previous_duration_in_seconds: 
+  irrigation_zone4_previous_duration_in_seconds:
     name: Zone 4 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone5_previous_duration_in_seconds: 
+  irrigation_zone5_previous_duration_in_seconds:
     name: Zone 5 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone6_previous_duration_in_seconds: 
+  irrigation_zone6_previous_duration_in_seconds:
     name: Zone 6 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone7_previous_duration_in_seconds: 
+  irrigation_zone7_previous_duration_in_seconds:
     name: Zone 7 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone8_previous_duration_in_seconds: 
+  irrigation_zone8_previous_duration_in_seconds:
     name: Zone 8 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone9_previous_duration_in_seconds: 
+  irrigation_zone9_previous_duration_in_seconds:
     name: Zone 9 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone10_previous_duration_in_seconds: 
+  irrigation_zone10_previous_duration_in_seconds:
     name: Zone 10 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone11_previous_duration_in_seconds: 
+  irrigation_zone11_previous_duration_in_seconds:
     name: Zone 11 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone12_previous_duration_in_seconds: 
+  irrigation_zone12_previous_duration_in_seconds:
     name: Zone 12 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone13_previous_duration_in_seconds: 
+  irrigation_zone13_previous_duration_in_seconds:
     name: Zone 13 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone14_previous_duration_in_seconds: 
+  irrigation_zone14_previous_duration_in_seconds:
     name: Zone 14 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone15_previous_duration_in_seconds: 
+  irrigation_zone15_previous_duration_in_seconds:
     name: Zone 15 Previous Duration
     min: 0
     max: 40
     icon: mdi:timer
 
-  irrigation_zone16_previous_duration_in_seconds: 
+  irrigation_zone16_previous_duration_in_seconds:
     name: Zone 16 Previous Duration
     min: 0
     max: 40

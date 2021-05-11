@@ -64,12 +64,12 @@ card:
                                       states['input_boolean.irrigation_cycle1_running'].state == 'off' &&
                                       states['input_boolean.irrigation_cycle2_running'].state == 'off' &&
                                       states['input_boolean.irrigation_cycle3_running'].state == 'off')
-                                    return 'Run This Zone Now';
+                                    return 'Avvia questa Zona adesso';
                                   else if (
                                           entity.state == 'on' &&
                                           states['timer.irrigation_zone' + zone + '_timer'].state == 'active'
                                           )
-                                    return 'Stop This Zone';
+                                    return 'Ferma questa Zona';
                                   else return '';
                                 ]]]
                               icon: >
@@ -118,7 +118,7 @@ card:
                                             states['input_boolean.irrigation_cycle1_running'].state == 'on' ||
                                             states['input_boolean.irrigation_cycle2_running'].state == 'on' ||
                                             states['input_boolean.irrigation_cycle3_running'].state == 'on')
-                                          return ''; 
+                                          return '';
                                         else 'var(--primary-background-color)';
                                       ]]]
                                   - border: >
@@ -128,7 +128,7 @@ card:
                                             states['input_boolean.irrigation_cycle1_running'].state == 'on' ||
                                             states['input_boolean.irrigation_cycle2_running'].state == 'on' ||
                                             states['input_boolean.irrigation_cycle3_running'].state == 'on')
-                                          return ''; 
+                                          return '';
                                         else return '1px solid var(--accent-color)';
                                       ]]]
                                   - padding: >
@@ -181,11 +181,11 @@ card:
                               color_type: blank-card
 
                         - entity: input_number.irrigation_cycle{{ cycle }}_zone{{ zone }}_duration_box
-                          name: Duration
+                          name: Durata
                         - entity: input_text.irrigation_zone{{ zone }}_name
-                          name: Zone Name
+                          name: Nome Zone
                         - entity: input_text.irrigation_zone{{ zone }}_switch_entity_id
-                          name: Switch Name
+                          name: Nome Switch
                       style: >
                         ha-card {
                           font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};
@@ -217,7 +217,7 @@ card:
                 {% endif %}
                 {% set zone = {% endraw %} {{ zone }} {% raw %} %}
                 {% set cycle = {% endraw %} {{ cycle }} {% raw %} %}
-                {% if is_state('timer.irrigation_zone' ~ zone ~ '_timer', 'active') and 
+                {% if is_state('timer.irrigation_zone' ~ zone ~ '_timer', 'active') and
                       cycle_ui == 3 %}
                   --paper-item-icon-color: var(--paper-item-icon-active-color);
                 {% endif %}

@@ -34,7 +34,7 @@ tap_action:
       type: vertical-stack
       cards:
         - type: markdown
-          content: Leave blank to use the font from the current theme.
+          content: Lascia vuoto per usare i font del tema attuale.
           style: >
             ha-card {
               font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};
@@ -44,7 +44,7 @@ tap_action:
         - type: entities
           entities:
             - entity: input_text.irrigation_ui_font_family
-              name: Font Name
+              name: Nome Font
           style: >
             ha-card {
               font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};

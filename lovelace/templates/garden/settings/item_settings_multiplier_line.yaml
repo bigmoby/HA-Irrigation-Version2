@@ -37,40 +37,40 @@ tap_action:
   action: fire-dom-event
   browser_mod:
     command: popup
-    title: " &nbsp \U00002139 &nbsp &nbsp WEATHER ADJUSTMENTS"
+    title: " &nbsp \U00002139 &nbsp &nbsp CORREZIONI METEO"
     hide_header: true
     card:
       type: markdown
       content: >
-        ### Rain multiplier
+        ### Moltiplicatore pioggia
         
-        This multiplier will decrease watering time proportionally
-        based on the difference between the rainfall threshold and the amount of
-        rain over the last few days.
+        Questo moltiplicatore diminuirà il tempo di irrigazione proporzionalmente
+        basandosi sulla differenza tra la soglia di pioggia impostata e la quantità
+        di pioggia caduta negli ultimi giorni.
 
         
-        If the threshold is reached then it will stop it altogether.
+        Se la soglia di pioggia viene raggiunta allora si fermerà del tutto.
 
 
         ---
 
 
-        ### Temperature multiplier
+        ### Moltiplicatore di temperatura
 
-        This multiplier will increase or decrease watering time proportionally
-        based on the difference between the temperature threshold and the 
-        average high temperature over the last few days.
-
-
-        It is calculated as High Temperature divided by Baseline Temperature.
+        Questo moltiplicatore diminuirà o aumenterà il tempo d'irrigazione proporzionalmente
+        basandosi sulla differenza tra la soglia di temperatura impostata e 
+        la temperatura media raggiunta negli ultimi giorni.
 
 
-        For example, if the baseline temperature is set to 25 degrees and the
-        average temperature has been 30 degrees the adjustent will be plus 20%.
+        E' calcolato come la temperatura Massima raggiunta diviso la temperatura di base.
 
 
-        Likewise if the average temperature has only been 20 degrees the
-        adjustment will be minus 20%.
+        Ad esempio, se la temperatura di base è impostata a 25 gradi e la
+        temperatura media è stata 30 gradi allora la correzione sarà di +20%.
+
+
+        Analogalmente se la temperatura media è stata di soli 20 gradi allora
+        la correzione sarà di -20%.
       style: >
         ha-card {
           font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};

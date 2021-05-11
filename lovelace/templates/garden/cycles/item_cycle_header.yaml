@@ -12,7 +12,7 @@ cards:
     name: >
       [[[
         var entity_id = 'input_text.irrigation_cycle{{ cycle }}_name';
-        return states[entity_id].state.toUpperCase() + ' SCHEDULE';
+        return 'PROGRAMMAZIONE ' + states[entity_id].state.toUpperCase() ;
       ]]]
     show_state: true
     show_entity_picture: true # Disable if using mdi icons
@@ -52,13 +52,13 @@ cards:
       action: fire-dom-event
       browser_mod:
         command: popup
-        title: Cycle {{ cycle }} Settings
+        title: Impostazioni Ciclo {{ cycle }}
         hide_header: true
         card:
           type: entities
           entities:
             - entity: input_text.irrigation_cycle{{ cycle }}_name
-              name: Name
+              name: Nome
               icon: mdi:alphabetical-variant
           style: >
             ha-card {

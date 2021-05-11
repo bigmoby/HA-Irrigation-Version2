@@ -29,26 +29,26 @@ entities:
             var mins = date.toISOString().substr(14, 2);
 
             if (hrs == 1)
-              var hrs_s = ' Hour and ';
+              var hrs_s = ' Ora e ';
             else
-              var hrs_s = ' Hours and ';
+              var hrs_s = ' Ore e ';
 
             if (mins == 1)
-              var mins_s = ' Minute';
+              var mins_s = ' Minuto';
             else
-              var mins_s = ' Minutes';
+              var mins_s = ' Minuti';
 
             if (states['input_boolean.irrigation_testing_mode'].state == 'on')
-              return 'Total Runtime: ' + total_seconds + ' Seconds (testing mode)';
+              return 'Tempo totale: ' + total_seconds + ' Secondi (modalità test)';
             else {
               if (hrs == '00')
-                return 'Total Runtime: ' + (total_seconds / 60) + mins_s;
+                return 'Tempo totale: ' + (total_seconds / 60) + mins_s;
               else if (hrs == '01')
-                return 'Total Runtime: ' + hrs.substr(1, 1) + hrs_s + mins + mins_s;
+                return 'Tempo totale: ' + hrs.substr(1, 1) + hrs_s + mins + mins_s;
               else if (hrs > '01')
-                return 'Total Runtime: ' + hrs.substr(1, 1) + hrs_s + mins + mins_s;
+                return 'Tempo totale: ' + hrs.substr(1, 1) + hrs_s + mins + mins_s;
               else
-                return 'Total Runtime: ' + mins + mins_s;
+                return 'Tempo totale: ' + mins + mins_s;
             }
           ]]]
         styles:

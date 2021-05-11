@@ -28,7 +28,7 @@ label: >
     if (cycle == 'cycle0')
       return zone_name;
     else if (zone_timer_status == 'active')
-      return 'Watering ' + zone_name;
+      return 'Irrigando ' + zone_name;
     else
       return zone_name;
   ]]]

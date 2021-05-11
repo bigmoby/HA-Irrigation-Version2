@@ -46,7 +46,7 @@ cards:
               type: vertical-stack
               cards:
                 - type: markdown
-                  content: Choose which high temperature measurement is used.
+                  content: Scegli quale misurazione di temperatura massima sarà usata.
                   style: >
                     ha-card {
                       font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};

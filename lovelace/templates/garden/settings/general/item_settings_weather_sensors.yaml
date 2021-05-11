@@ -4,7 +4,7 @@
 #=== SETTINGS WEATHER SENSORS
 #=============================
 type: custom:button-card
-name: Weather Sensors...
+name: Sensori Meteo...
 icon: mdi:weather-partly-cloudy
 show_state: true
 state_display: <elt><ha-icon icon=mdi:square-edit-outline></ha-icon></elt>
@@ -33,7 +33,7 @@ tap_action:
       cards:
         - type: markdown
           content: >
-            For the 'Weather Outlook' you need to create the following sensor:
+            Per le 'Previsioni Meteorologiche' ti occorre creare il seguente sensore:
           style: >
             ha-card {
               font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};
@@ -51,21 +51,21 @@ tap_action:
         - type: entities
           entities:
             - type: section
-              label: Rainfall Sensors (leave blank to reset default)
+              label: Sensore Pioggia (lascia vuoto per impostare al valore di default)
             - entity: input_text.irrigation_external_sensor_raining_now
-              name: Raining Now
+              name: Pioggia attuale
             - entity: input_text.irrigation_external_sensor_rainfall_today
-              name: Rain Today
+              name: Pioggia domani
             - entity: input_text.irrigation_external_sensor_rainfall_yesterday
-              name: Rain Yesterday
+              name: Pioggia ieri
             - entity: input_boolean.irrigation_show_smartweather_stations
-              name: Using SmartWeather (show stations)
+              name: Uso di SmartWeather (vedi le stazioni disponibili)
             - type: section
-              label: Temperature Sensors (leave blank to reset default)
+              label: Sensore Temperatura (lascia vuoto per impostare al valore di default)
             - entity: input_text.irrigation_external_sensor_forecast_high_temp
-              name: Forecast High Temperature
+              name: Previsione Temperatura Massima
             - entity: input_text.irrigation_external_sensor_current_temp
-              name: Current Temperature
+              name: Temperatura attuale
           style: >
             ha-card {
               font-family: {% raw %}{{ states('input_text.irrigation_ui_font_family') }}{% endraw %};

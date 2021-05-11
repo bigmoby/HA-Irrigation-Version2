@@ -16,7 +16,7 @@ cards:
       !include
       - ../item_settings_check_box_with_entity_icon.yaml
       - entity: input_boolean.irrigation_notify_user1
-        name: "${'Notify ' +  vars[0] + ' of events'}"
+        name: "${'Notifica ' +  vars[0] + ' eventi'}"
 
   #=== User 2
   - type: custom:config-template-card
@@ -30,4 +30,4 @@ cards:
       !include
       - ../item_settings_check_box_with_entity_icon.yaml
       - entity: input_boolean.irrigation_notify_user2
-        name: "${'Notify ' +  vars[0] + ' of events'}"
+        name: "${'Notifica ' +  vars[0] + ' eventi'}"

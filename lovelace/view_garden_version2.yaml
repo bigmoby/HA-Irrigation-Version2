@@ -12,7 +12,7 @@ cards:
 
 
   #===========
-  #=== CYCLES 
+  #=== CYCLES
   #===========
   - type: vertical-stack
     cards:
@@ -20,14 +20,14 @@ cards:
         conditions:
           - entity: input_boolean.irrigation_master_control_switch
             state: "on"
-        card: 
+        card:
           !include templates/garden/cycles/page_cycles.yaml
 
       - type: conditional
         conditions:
           - entity: input_boolean.irrigation_master_control_switch
             state: "on"
-        card: 
+        card:
           type: custom:hui-element
           card_type: custom:state-switch
           entity: sensor.irrigation_ui_selected_cycle

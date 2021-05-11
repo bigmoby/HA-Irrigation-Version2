@@ -21,7 +21,7 @@ entities:
       #===        than try to track down this obscure issue I added this Title button
       #===        which I quite like as it is consistent with the Settings page.
       - type: custom:button-card
-        name: -- CYCLES --
+        name: -- CICLI --
         styles:
           card:
             - font-size: 16px
@@ -127,21 +127,21 @@ entities:
                 ## Watering Time Overview
 
 
-                --- |  {{ cycle1_name }} Cycle  |  {{ cycle2_name }} Cycle 
+                --- |  Ciclo {{ cycle1_name }}  |  Ciclo {{ cycle2_name }}  
                   ---|:---:|:---:
-                Monday | {{ ns.duration_c1_mon }} min | {{ ns.duration_c2_mon }} min
+                Lunedì | {{ ns.duration_c1_mon }} min | {{ ns.duration_c2_mon }} min
 
-                Tuesday | {{ ns.duration_c1_tue }} min | {{ ns.duration_c2_tue }} min
+                Martedì | {{ ns.duration_c1_tue }} min | {{ ns.duration_c2_tue }} min
 
-                Wednesday | {{ ns.duration_c1_wed }} min | {{ ns.duration_c2_wed }} min
+                Mercoledì | {{ ns.duration_c1_wed }} min | {{ ns.duration_c2_wed }} min
 
-                Thursday | {{ ns.duration_c1_thu }} min | {{ ns.duration_c2_thu }} min
+                Giovedì | {{ ns.duration_c1_thu }} min | {{ ns.duration_c2_thu }} min
 
-                Friday | {{ ns.duration_c1_fri }} min | {{ ns.duration_c2_fri }} min
+                Venerdì | {{ ns.duration_c1_fri }} min | {{ ns.duration_c2_fri }} min
 
-                Saturday | {{ ns.duration_c1_sat }} min | {{ ns.duration_c2_sat }} min
+                Sabato | {{ ns.duration_c1_sat }} min | {{ ns.duration_c2_sat }} min
 
-                Sunday | {{ ns.duration_c1_sun }} min | {{ ns.duration_c2_sun }} min
+                Domenica | {{ ns.duration_c1_sun }} min | {{ ns.duration_c2_sun }} min
 
               style: >
                 ha-card {
