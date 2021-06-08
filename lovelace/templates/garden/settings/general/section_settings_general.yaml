@@ -20,16 +20,28 @@ entities:
               on_name: "Sistema è ON"
               off_name: "Sistema è OFF"
 
+          #=== Irrigation Remote Control
+          - !include
+            - ../item_settings_check_box_with_entity_icon.yaml
+            - entity: input_boolean.irrigation_remote_control
+              on_name: "Remote Control is ON"
+              off_name: "Remote Control is OFF"
+
+      - type: horizontal-stack
+        cards:
+
           #=== Irrigation Testing Mode
           - !include
             - ../item_settings_check_box_with_entity_icon.yaml
             - entity: input_boolean.irrigation_testing_mode
+              on_name: "Test Mode is ON"
+              off_name: "Test Mode is OFF"
 
-      #=== Testing mode warning
-      - !include
-          - item_settings_warning.yaml
-          - entity: input_boolean.irrigation_testing_mode
-            name: 'Attenzione! La modalità test converte i minuti <br>in secondi'
+          #=== Testing mode warning
+          - !include
+              - item_settings_warning.yaml
+              - entity: input_boolean.irrigation_testing_mode
+                name: 'Warning! Testing mode converts run<br>times from minutes to seconds'
 
       #=== Notify users
       - !include item_settings_notify_users.yaml
